@@ -1,0 +1,32 @@
+{
+  "name": "app-expo",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^16.1.4",
+    "expo": "^48.0.19",
+    "expo-config": "^1.0.0",
+    "expo-constants": "^14.2.1",
+    "expo-status-bar": "~1.4.4",
+    "react": "^18.2.0",
+    "react-native": "^0.71.8",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-elements": "^3.4.3",
+    "react-native-sse": "^1.1.0",
+    "react-native-svg": "13.4.0",
+    "victory-native": "^36.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.0.14",
+    "typescript": "^4.9.4"
+  },
+  "private": true
+}
