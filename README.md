@@ -12,11 +12,11 @@ This integration consists of three key elements:
 
 2. API Endpoint Server: Next.js, a popular JavaScript framework, is employed to establish the API endpoint server. This server sets up HTTP API routes (/api/ros and /api/led), directly linking these routes to the ROS topics (/sensor/distance and /led/control), thereby serving as a conduit for the hardware to interact with the web clients.
 
-3. Web Clients: The client-side of our demonstration involves applications developed using Vue.js, React.js, and React Native. These clients are designed to connect to the API endpoint, retrieve real-time data from the distance sensor, plot this data in an interactive graph, and control the state of the LED (on/off).
+3. Web Clients: The client-side of the demonstration involves applications developed using Vue.js, React.js, and React Native. These clients are designed to connect to the API endpoint, retrieve real-time data from the distance sensor, plot this data in an interactive graph, and control the state of the LED (on/off).
 
-Through these combined elements, we will demonstrate how diverse platforms such as Vue.js, React.js, React Native, Next.js, and ROS can communicate and interact in real-time, showcasing a fascinating blend of web, mobile, and robotic technologies.
+Through these combined elements, I will demonstrate how diverse platforms such as Vue.js, React.js, React Native, Next.js, and ROS can communicate and interact in real-time, showcasing a fascinating blend of web, mobile, and robotic technologies.
 
-The ultimate goal is to provide a clear understanding of this integration, enabling you to apply similar methodologies to your own unique projects.For more details on how we implement ROS in web clients, visit roslibjs at [https://github.com/RobotWebTools/roslibjs].
+The ultimate goal is to provide a clear understanding of this integration, enabling you to apply similar methodologies to your own unique projects.For more details on how to implement ROS in web clients, visit roslibjs at [https://github.com/RobotWebTools/roslibjs].
 
 ## B. Install and run
 
