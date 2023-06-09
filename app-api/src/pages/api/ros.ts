@@ -40,8 +40,8 @@ ros.on('error', function(error:any) {
 // Create and cache Topic
 let topic = new ROSLIB.Topic({
   ros: ros,
-  name: "/sensor/distance", // replace with your topic
-  messageType: "std_msgs/msg/Float32", // replace with your message type
+  name: "/sensor/distance",
+  messageType: "std_msgs/msg/Float32", 
 });
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
