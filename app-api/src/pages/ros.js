@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import ROSLIB from "roslib";
+import { config } from "dotenv";
 
+config();
 const RosPage = () => {
   const [message, setMessage] = useState(null);
 
   useEffect(() => {
     const ros = new ROSLIB.Ros({
-      url: "ws://192.168.1.102:9090", // replace with your ROS bridge server
+      url: "ws://" + process.env.ROS_WS_HOST_URL, // replace with your ROS bridge server
     });
 
     const topic = new ROSLIB.Topic({

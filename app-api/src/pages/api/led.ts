@@ -31,7 +31,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   // Only handle post requests
   if (req.method === 'POST') {
     const ros = new ROSLIB.Ros({
-      url: "ws://"+ process.env.HOST_URL, // replace with your ROS bridge server
+      url: "ws://"+ process.env.ROS_WS_HOST_URL, // replace with your ROS bridge server
     });
 
     const topic = new ROSLIB.Topic({

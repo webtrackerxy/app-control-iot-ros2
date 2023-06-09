@@ -14,7 +14,6 @@
     "chart.js": "^4.3.0",
     "chartjs-plugin-streaming": "^2.0.0",
     "core-js": "^3.6.5",
-    "dotenv": "^16.1.4",
     "lodash": "4.17.21",
     "vue": "^3.2.22",
     "vue-chartjs": "^5.2.0",

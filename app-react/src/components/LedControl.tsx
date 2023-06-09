@@ -10,7 +10,7 @@ const LedControl: React.FC = () => {
     setLedState(newState);
     try {
       const response = await axios.post(
-        process.env.REACT_APP_HOST_URL + "/api/led",
+        process.env.REACT_APP_API_HOST_URL + "/api/led",
         {
           state: newState,
         }

@@ -20,7 +20,7 @@ export default {
   methods: {
     async updateLedState() {
       try {
-        const response = await axios.post(process.env.VUE_APP_HOST_URL + '/api/led', { state: this.ledState });
+        const response = await axios.post(process.env.VUE_APP_API_HOST_URL + '/api/led', { state: this.ledState });
         console.log(response.data);
       } catch (error) {
         console.error(error);

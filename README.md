@@ -10,7 +10,7 @@ This integration consists of three key elements:
 
 1. Hardware: The hardware setup comprises a Raspberry Pi 4 or Raspberry Pi 400 operating on ROS2. This hardware is connected to a distance sensor <a href="https://www.adafruit.com/product/3317">VL53L0X</a> and a LED. ROS nodes will be established to create the /sensor/distance and /led/control topics. These topics are responsible for capturing the data from the distance sensor and controlling the LED's state, respectively.
 
-2. API Endpoint Server: Next.js, a popular JavaScript framework, is employed to establish the API endpoint server. This server sets up HTTP API routes (/api/ros and /api/led), directly linking these routes to the ROS topics (/sensor/distance and /led/control), thereby serving as a conduit for the hardware to interact with the web clients.
+2. API Endpoint Server: Next.js, a popular JavaScript framework, is employed to establish the API endpoint server. This server sets up HTTP API routes (/api/sensor and /api/led), directly linking these routes to the ROS topics (/sensor/distance and /led/control), thereby serving as a conduit for the hardware to interact with the web clients.
 
 3. Web Clients: The client-side of the demonstration involves applications developed using Vue.js, React.js, and React Native. These clients are designed to connect to the API endpoint, retrieve real-time data from the distance sensor, plot this data in an interactive graph, and control the state of the LED (on/off).
 

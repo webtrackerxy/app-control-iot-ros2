@@ -46,7 +46,7 @@ const RealTimeChart = () => {
   useEffect(() => {
     console.log("Connect to EventSource");
     const es = new EventSource(
-      "https://70db-2a00-23c7-f832-3b01-f093-32dc-fad-e535.eu.ngrok.io/api/ros"
+      "https://70db-2a00-23c7-f832-3b01-f093-32dc-fad-e535.eu.ngrok.io/api/sensor"
     );
 
     const listener: EventSourceListener = (event) => {

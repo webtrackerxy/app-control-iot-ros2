@@ -14,7 +14,7 @@
       let eventSource: EventSource;
   
       onMounted(() => {
-        eventSource = new EventSource(process.env.VUE_APP_HOST_URL + '/api/ros'); // replace with your Next.js API URL
+        eventSource = new EventSource(process.env.VUE_APP_API_HOST_URL + '/api/sensor'); // replace with your Next.js API URL
   
         eventSource.onmessage = (event) => {
           const data = JSON.parse(event.data);

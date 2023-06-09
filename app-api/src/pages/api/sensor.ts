@@ -23,14 +23,14 @@ const runMiddleware = (req: NextApiRequest, res: NextApiResponse, fn: (req: Next
 
 // Create and cache ROSLIB.Ros instance
 const ros = new ROSLIB.Ros({
-  url: "ws://" + process.env.HOST_URL, // replace with your ROS bridge server
+  url: "ws://" + process.env.ROS_WS_HOST_URL, // replace with your ROS bridge server
   /* 
     To expose your ROS WebSocket server running on port 9090 to the internet
     1. Download and install ngrok
     2. Run ngrok > ngrok http 9090
     3. copy your_generated_subdomain.ngrok.io to the websocket server url. please use wss for secure web socket connection
   */
-  //  url: "wss://" + process.env.NGROK_URL, // replace with your ROS bridge server
+  //  url: "wss://" + process.env.ROS_WS_NGROK_HOST_URL, // replace with your ROS bridge server
 });
 
 ros.on('error', function(error:any) {

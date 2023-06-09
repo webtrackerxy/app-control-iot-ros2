@@ -51,7 +51,7 @@ export default {
     let eventSource; // Declare the eventSource variable
 
     onMounted(() => {
-      eventSource = new EventSource(process.env.VUE_APP_HOST_URL+'/api/ros');
+      eventSource = new EventSource(process.env.VUE_APP_API_HOST_URL+'/api/sensor');
 
       eventSource.onmessage = event => {
         const receivedData = JSON.parse(event.data);
@@ -74,7 +74,7 @@ export default {
             ]
           }
 
-        console.log("chartData", chartData)
+        // console.log("chartData", chartData)
       };
     });
 
@@ -93,7 +93,7 @@ export default {
         scales: {
           y: {
             min: 0,
-            max: 0.2
+            max: 0.3
           }
         },
         layout: {

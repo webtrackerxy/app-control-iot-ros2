@@ -18,7 +18,7 @@ const RealTimeChart: React.FC = () => {
 
   useEffect(() => {
     const eventSource = new EventSource(
-      process.env.REACT_APP_HOST_URL + "/api/ros"
+      process.env.REACT_APP_API_HOST_URL + "/api/sensor"
     );
 
     eventSource.onmessage = (event) => {
