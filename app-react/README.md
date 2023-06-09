@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Edit environment variables
 
 ```
-Edit .env, change HOST_URL to IP address of the ROS2 machine.
+Edit .env, change HOST_URL to IP address of the API Server.
 
 ```
 
