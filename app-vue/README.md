@@ -1,24 +1,17 @@
 # app-vue
 
-## Project setup
+<img src="../docs/vue.png" alt="vue" width="800px">
+
+### Edit environment variables
+
+```
+Edit .env, change HOST_URL to IP address of the ROS2 machine.
+
+```
+
+## Project setup and run
+
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
