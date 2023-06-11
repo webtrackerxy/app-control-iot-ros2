@@ -16,7 +16,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## API endpoints
 
 1. Distance Sensor <br>
-   [http://localhost:3000/api/ros](http://localhost:3000/api/ros)
+   [http://localhost:3000/api/sensor](http://localhost:3000/api/sensor)
 
 2. LED Control <br>
    [http://localhost:3000/api/led](http://localhost:3000/api/led)
