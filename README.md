@@ -22,22 +22,22 @@ The ultimate goal is to provide a clear understanding of this integration, enabl
 
 Please following the steps from the README for each of below folders in sequence.
 
-1. ROS
+1. ROS (/ros2)
 
    Setup and install ROS2 in raspberry Pi 4 or raspberry Pi 400
 
-2. API server
+2. API server (/app-api)
 
    Setup and install API end point in Next.js
 
-3. Vue.js client
+3. Vue.js client (/app-vue)
 
    Setup and install Vue client
 
-4. React.js client
+4. React.js client (/app-react)
 
    Setup and install Vue React.js client
 
-5. React Native client
+5. React Native client (/app-expo)
 
    Setup and install React Native client
