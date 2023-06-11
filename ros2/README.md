@@ -1,5 +1,39 @@
 ### A. Install ROS in Raspberry PI
 
+Before installing ROS 2, ensure your Raspberry Pi 4 or 400 is set up correctly. Install Ubuntu Server 20.04 LTS. Run the following commands to setup, install and test ROS2
+
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+sudo apt install curl gnupg2 lsb-release
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+sudo apt update
+sudo apt install ros-foxy-desktop
+echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+
+Test the installation:
+
+Open a terminal, run the following command.
+
+```
+ros2 run demo_nodes_cpp talker
+```
+
+Open another terminal, run the following command.
+
+```
+ros2 run demo_nodes_cpp listener
+```
+
+You will see the message sending fro talker to listener.
+
 ### B. Setup and Installation
 
 ```
