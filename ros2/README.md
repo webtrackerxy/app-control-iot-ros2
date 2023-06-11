@@ -32,7 +32,7 @@ Open another terminal, run the following command.
 ros2 run demo_nodes_cpp listener
 ```
 
-You will see the message sending fro talker to listener.
+You will see the messages sending from the talker to the listener.
 
 ### B. Setup and Installation
 
