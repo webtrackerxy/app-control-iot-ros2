@@ -18,7 +18,13 @@ Through these combined elements, I will demonstrate how diverse platforms such a
 
 The ultimate goal is to provide a clear understanding of this integration, enabling you to apply similar methodologies to your own unique projects.For more details on how to implement ROS in web clients, visit roslibjs at [https://github.com/RobotWebTools/roslibjs].
 
-## B. Install and run
+## B. Hardware photos
+
+<img src="./docs/images/hardward1.jpeg" alt="hardware1" width="600px">
+
+more photos in ./docs/images folder
+
+## C. Install and run
 
 Please following the steps from the README for each of below folders in sequence.
 
@@ -41,3 +47,9 @@ Please following the steps from the README for each of below folders in sequence
 5. React Native client (/app-expo)
 
    Setup and install React Native client
+
+## D. Videos
+
+<a href="https://www.youtube.com/watch?v=BlFFicYJrwI" target="_blank">
+  <img src="./docs/video_demo.png" alt="Click to watch video" style="width:500px;
+</a>
