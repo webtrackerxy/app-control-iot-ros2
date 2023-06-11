@@ -5,7 +5,7 @@
 ### Edit environment variables
 
 ```
-Edit .env, change HOST_URL to IP address of the API Server.
+Rename .env.sample to .env, edit .env, change VUE_APP_API_HOST_URL to IP address of the API Server.
 
 ```
 

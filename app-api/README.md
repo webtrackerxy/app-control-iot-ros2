@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-1. Edit .env, change HOST_URL to IP address of the ROS2 machine.
+1. Rename .env.sample to .env, Edit .env, change ROS_WS_HOST_URL to IP address of the ROS2 machine.
 2. Install and run the development server:
 
    ```bash
