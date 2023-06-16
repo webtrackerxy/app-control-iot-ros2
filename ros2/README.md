@@ -14,6 +14,8 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 sudo apt update
 sudo apt install ros-foxy-desktop
+sudo apt install python3-colcon-common-extensions
+sudo apt-get install ros-noetic-rosbridge-server
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
@@ -68,7 +70,7 @@ Start ROS service
 Check ROS topics
 
 ```
-ros2 run topic list
+ros2 topic list
 ```
 
 <br>
@@ -87,7 +89,7 @@ You should see below topics<br>
 ```
  ros2 topic echo /sensor/distance
 
- you will see something like this:
+ you will see something like this: It return the data from the distance sensor in meter.
 data: 0.1850000023841858
 ---
 data: 0.18400000035762787
