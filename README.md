@@ -50,6 +50,6 @@ Please following the steps from the README for each of below folders in sequence
 
 ## D. Videos
 
-<a href="https://www.youtube.com/watch?v=BlFFicYJrwI" target="_blank">
+<a href="https://www.youtube.com/watch?v=Z4DQSwsrffg" target="_blank">
   <img src="./docs/video_demo.png" alt="Click to watch video" style="width:500px;" />
 </a>
